@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(0deg, #d4e1f1, #d4e1f1);
+    overflow: hidden;
+
+}
+
+
+
+.left {
+    display: inline-block;
+    height: 100%;
+    min-width: 95px;
+    position: absolute;
+
+}
+
+
+/*naaaaaav*/
+.nav1 {
+    /*
+      background-color: #32174d6c;*/
+    background-color: #3a99f3;
+    width: 36%;
+    height: 100%;
+    margin-left: 58%;
+    position: absolute;
+    border-right: 1px solid #ffffff88;
+    border-top: 0.3px solid #ffffff5b;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.nav2 {
+
+    /* background-color: #403185;
+      background-image: linear-gradient(0deg, #616496b7, #616496b7);*/
+
+    background-color: #3a99f3;
+    width: 40%;
+    min-height: 232px;
+    margin-left: 17%;
+    margin-top: 80.2px;
+    border-radius: 46% 0% 0% 46% / 8% 0% 0% 10%;
+    position: absolute;
+    border-top: #ffffff8a 1px solid;
+    border-left: 0.5px solid #ffffff83;
+    border-bottom: 0.3px solid #ffffff91;
+    z-index: 2;
+
+
+}
+
+.nav3 {
+    background-color: #ffffff;
+
+    background-image: linear-gradient(0deg, #d0ddec, #d4e1f1);
+    width: 85%;
+    height: 80.5px;
+    margin-top: 0px;
+    border-radius: 0% 0% 35% 0% / 9% 10% 35% 0%;
+    position: relative;
+
+    border-right: 0.5px solid #ffffff6c;
+    border-bottom-right-radius: 35%;
+
+}
+
+.nav4 {
+    background-color: #ffffff;
+    background-image: linear-gradient(0deg, #d4e1f1, #d0ddec);
+    width: 85%;
+    height: 100vh;
+    position: relative;
+    margin-top: 290px;
+    border-radius: 0% 30% 0% 0% / 0% 5% 10% 0%;
+
+
+}
+
+#logo {
+
+    margin-top: 15px;
+    margin-left: 13px;
+    opacity: .9;
+
+    transition: all .2s ease-in-out;
+
+
+}
+
+#logo:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    opacity: 1;
+}
+
+.list {
+    margin-left: 35%;
+    display: block;
+}
+
+.icon11 {
+    z-index: 1;
+}
+
+.icon1 {
+    color: #3a99f3;
+    --ionicon-stroke-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #3a99f3;
+    transform: rotate(3.142rad);
+    margin-bottom: 10px;
+    margin-left: -35px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.icon2 {
+    color: #ffffff9a;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #ffffff7a;
+    padding: 7.48px;
+    cursor: pointer;
+    margin: 5px 0;
+
+
+}
+
+.icon2:hover {
+    transform: scale(1.12);
+    transition: 0.2s;
+    z-index: 1;
+    opacity: 1;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+
+}
+
+#firsicon {
+    margin-top: 15px;
+}
+
+#lasticon {
+    margin-bottom: 10px;
+}
+
+/* dark mood */
+.dark {
+    background-color: #3493ec;
+    height: 50px;
+    z-index: 2;
+    position: relative;
+    margin-left: -60px;
+
+
+}
+
+.darkmood {
+    width: 75px;
+    height: 27px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    margin-top: -7px;
+    margin-left: 9px;
+}
+
+.darkmood:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.darkmood2 {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.darkmood2:checked+label {
+    background: #242424;
+}
+
+.darkmood2:checked+label:after {
+    left: 69.2px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.darkmood2,
+.darkmood:after {
+    transition: 0.5s
+}
+
+.darkmood:active:after {
+    width: 20px;
+}
+
+label svg {
+    position: absolute;
+    width: 20px;
+
+    z-index: 100;
+}
+
+label svg.sun {
+    left: 3px;
+    top: 5px;
+    fill: #ffffff;
+    transition: 0.3s;
+}
+
+label svg.moon {
+    left: 50px;
+    top: 5px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+
+}
+
+input:checked+label svg.sun {
+    fill: #7e7e7e;
+}
+
+input:checked+label svg.moon {
+    fill: #fff;
+}
+
+/*mid-----------------------------------*/
+.mid {
+    width: 93%;
+    height: 100vh;
+    margin-left: 130px;
+    
+
+
+}
+
+
+#titlle {
+    padding-top: 15px;
+    font-size: 55px;
+    position: relative;
+    color: #3493ec;
+    font-family: "Josefin Sans", sans-serif;
+    font-kerning: none;
+    word-spacing: 3px;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    align-items: center;
+    margin-left: -55px;
+
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 80px;
+    padding: 3% 12% 7% 8%;
+    margin-top: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.admin {
+    position: relative;
+    width: 270px;
+    height: 180px;
+    background-image: linear-gradient(0deg, #a7c9ebd5, #4a96dd);
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 2px #19191a8e;
+    cursor: pointer;
+    padding-top: 20px;
+
+}
+
+.admin:hover {
+    background-image: linear-gradient(0deg, #6ca2d8d5, #2583db);
+    box-shadow: 3px 6px 6px 3px #19191a8e;
+}
+
+.user {
+    position: relative;
+    width: 250px;
+    height: 360px;
+    background-image: linear-gradient(0deg, #c8daecd5, #4a96dd);
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 2px #44464775;
+}
+
+#logoadmin {
+    width: 140px;
+    height: 140px;
+    margin-left: 20%;
+}
+
+#logoadmin2 {
+    width: 150px;
+    height: 155px;
+    margin-left: 20%;
+}
+
+#logoadmin3 {
+    width: 160px;
+    height: 140px;
+    margin-left: 20%;
+}
+
+#logoadmin4 {
+    width: 160px;
+    height: 160px;
+    margin-left: 20%;
+}
+#logoadmin5 {
+    width: 145px;
+    height: 145px;
+    margin-left: 22%;
+}
+#logoadmin6 {
+    width: 160px;
+    height: 160px;
+    margin-left: 20%;
+}
+
+#adminexpla,
+#userexpla {
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 0.1rem;
+    word-spacing: 1px;
+    padding-right: 4px;
+    padding-left: 3px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(0deg, #d4e1f1, #d4e1f1);
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.all {
+    padding: 0 80px;
+}
+#titlle {
+    margin-top: 30px;
+    font-size: 55px;
+    position: relative;
+    color: #3493ec;
+    margin-left: 12%;
+    font-family: "Josefin Sans", sans-serif;
+    font-kerning: none;
+    word-spacing: 3px;
+    letter-spacing: 0.3rem;
+    z-index: 3;
+}
+
+.login-box {
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    width: 380px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: #5198dbcb;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 55px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 0.2rem;
+
+
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    word-spacing: 3px;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 0 7px 0;
+    font-size: 18px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    letter-spacing: 0.07rem;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    margin-top: -10px;
+    left: 0;
+    color: #b1e8eb;
+    font-size: 13px;
+}
+
+.buttonsignyp {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #cbe1f1f1 ;
+    border-radius: 3px;
+    
+}
+
+.buttonsignyp:hover {
+    background: #cbe1f1f1;
+    color: #3493ec;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #22e7f1cc,
+        0 0 25px #ffffffbb,
+        0 0 50px #7aecf1ad,
+        0 0 100px #8febf0b0;
+}
+
+
+
+/*---------*/
+.round {
+    position: absolute;
+
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 25px;
+    width: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: fixed;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 18px;
+}
